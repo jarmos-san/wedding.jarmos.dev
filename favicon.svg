@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#991b1b" />
+      <stop offset="50%" stop-color="#851d1d" />
+      <stop offset="100%" stop-color="#450a0a" />
+    </linearGradient>
+
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fef08a" />
+      <stop offset="30%" stop-color="#facc15" />
+      <stop offset="70%" stop-color="#ca8a04" />
+      <stop offset="100%" stop-color="#854d0e" />
+    </linearGradient>
+
+    <radialGradient id="centerGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fef08a" stop-opacity="0.25" />
+      <stop offset="100%" stop-color="#991b1b" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)" />
+  <rect x="20" y="20" width="472" height="472" rx="92" fill="none" stroke="url(#goldGrad)" stroke-width="6" stroke-opacity="0.6" />
+
+  <circle cx="256" cy="256" r="210" fill="url(#centerGlow)" />
+  <circle cx="256" cy="256" r="215" fill="none" stroke="url(#goldGrad)" stroke-width="2" stroke-dasharray="12, 8" stroke-opacity="0.5" />
+
+  <g fill="url(#goldGrad)" opacity="0.4">
+    <circle cx="64" cy="64" r="6" />
+    <circle cx="448" cy="64" r="6" />
+    <circle cx="64" cy="448" r="6" />
+    <circle cx="448" cy="448" r="6" />
+  </g>
+
+  <g fill="none" stroke="url(#goldGrad)" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M 256 385 C 170 320, 120 250, 120 190 A 65 65 0 0 1 240 145 A 65 65 0 0 1 392 190 C 392 250, 342 320, 256 385 Z" stroke-width="10" stroke-opacity="0.85" />
+    <path d="M 226 145 C 226 130, 241 120, 256 120 C 271 120, 286 130, 286 145 C 286 160, 271 170, 256 170 C 241 170, 226 160, 226 145 Z" stroke-width="4" stroke-opacity="0.6" />
+  </g>
+
+  <g font-family="Playfair Display, Georgia, serif" font-weight="700" fill="url(#goldGrad)" text-anchor="middle">
+    <text x="200" y="275" font-size="115" letter-spacing="-2">M</text>
+    <!-- Properly escaped entity -->
+    <text x="256" y="265" font-size="52" font-family="Cinzel, Georgia, serif" font-weight="400" opacity="0.95">&</text>
+    <text x="312" y="275" font-size="115" letter-spacing="-2">S</text>
+  </g>
+
+  <path d="M 180 335 L 332 335" stroke="url(#goldGrad)" stroke-width="3" stroke-linecap="round" opacity="0.7" />
+  <circle cx="256" cy="335" r="4" fill="url(#goldGrad)" />
+</svg>

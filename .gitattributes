@@ -318,3 +318,5 @@ dist/**           binary
 # Apply override to all files in the directory
 *.md linguist-detectable
 
+# iCalendar downloads retain RFC 5545 CRLF bytes in the repository and on Pages.
+*.ics -text

@@ -1,778 +1,494 @@
 <!doctype html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Somraj & Munmun | Tripura Wedding & Reception</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#741F31" />
     <meta
       name="description"
-      content="Join Somraj & Munmun as they celebrate their wedding on December 13th in Kumarghat and grand reception on December 17th in Agartala, Tripura."
+      content="Celebrate the wedding of Munmun and Somraj in Kumarghat on 13 December 2026 and their reception in Agartala on 17 December 2026."
     />
-
-    <!-- Canonical URL -->
-    <link rel="canonical" href="https://wedding.jarmos.dev" />
-
-    <!-- Open Graph / Facebook / WhatsApp -->
     <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://wedding.jarmos.dev" />
-    <meta property="og:title" content="Somraj & Munmun | Tripura Wedding & Reception" />
+    <meta
+      property="og:title"
+      content="Munmun & Somraj — A Wedding in Tripura"
+    />
     <meta
       property="og:description"
-      content="Join Somraj & Munmun as they celebrate their wedding on December 13th in Kumarghat and grand reception on December 17th in Agartala, Tripura."
+      content="Two celebrations, one beautiful beginning. 13 & 17 December 2026, Tripura."
     />
     <meta
       property="og:image"
-      content="https://ik.imagekit.io/jarmos/somraj-and-munmun-wedding-social-card.png"
+      content="https://wedding.jarmos.dev/assets/social-card.png"
     />
+    <link rel="canonical" href="https://wedding.jarmos.dev/" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <meta property="og:url" content="https://wedding.jarmos.dev/" />
+    <meta property="og:locale" content="en_IN" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
     <meta
       property="og:image:alt"
-      content="Somraj & Munmun Tripura Wedding & Reception Social Card"
+      content="Munmun and Somraj — 13 and 17 December 2026, Tripura"
     />
-
-    <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://wedding.jarmos.dev" />
-    <meta name="twitter:title" content="Somraj & Munmun | Tripura Wedding & Reception" />
+    <meta
+      name="twitter:title"
+      content="Munmun &amp; Somraj — A Wedding in Tripura"
+    />
     <meta
       name="twitter:description"
-      content="Join Somraj & Munmun as they celebrate their wedding on December 13th in Kumarghat and grand reception on December 17th in Agartala, Tripura."
+      content="Celebrate with us on 13 December in Kumarghat and 17 December in Agartala, Tripura."
     />
     <meta
       name="twitter:image"
-      content="https://ik.imagekit.io/jarmos/somraj-and-munmun-wedding-social-card.png"
+      content="https://wedding.jarmos.dev/assets/social-card.png"
     />
-
-    <!-- Favicon -->
-    <link
-      rel="icon"
-      type="image/png"
-      href="https://ik.imagekit.io/jarmos/somraj-and-munmun-wedding-favicon.png"
-    />
-
-    <!-- Google Fonts -->
+    <title>Munmun & Somraj | Wedding & Reception · Tripura 2026</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap"
       rel="stylesheet"
     />
-
-    <!-- Tailwind CSS (Play CDN) -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              terracotta: {
-                50: "#fdf8f6",
-                100: "#f4e7e2",
-                500: "#c25e41",
-                600: "#a84a30",
-                700: "#8c3b24",
-                800: "#7a311e",
-              },
-              emeraldCustom: {
-                700: "#1a4332",
-                800: "#123325",
-                900: "#0b2118",
-              },
-              goldCustom: {
-                400: "#e5c158",
-                500: "#d4af37",
-                600: "#aa8822",
-              },
-              cream: "#fdfbf7",
-            },
-            fontFamily: {
-              serif: ["Cormorant Garamond", "serif"],
-              sans: ["Plus Jakarta Sans", "sans-serif"],
-            },
-          },
-        },
-      };
-    </script>
-
-    <!-- Lucide Icons -->
-    <script src="https://unpkg.com/lucide@latest"></script>
-
-    <!-- Alpine.js CDN -->
-    <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
-
-    <style>
-      /* Decorative royal background pattern */
-      .bg-pattern {
-        background-color: #fdfbf7;
-        background-image:
-          radial-gradient(#d4af37 0.7px, transparent 0.7px),
-          radial-gradient(#d4af37 0.7px, #fdfbf7 0.7px);
-        background-size: 28px 28px;
-        background-position:
-          0 0,
-          14px 14px;
-      }
-
-      /* Hero backdrop gradient */
-      .hero-gradient {
-        background: linear-gradient(
-          180deg,
-          rgba(253, 251, 247, 0.85) 0%,
-          rgba(253, 251, 247, 1) 100%
-        );
-      }
-
-      [x-cloak] {
-        display: none !important;
-      }
-    </style>
+    <link rel="stylesheet" href="styles.css" />
   </head>
-  <body
-    class="bg-cream font-sans text-slate-800 antialiased selection:bg-goldCustom-500 selection:text-white"
-    x-data="weddingApp()"
-  >
-    <!-- Navigation Bar -->
-    <nav
-      class="fixed top-0 left-0 right-0 z-40 bg-cream/90 backdrop-blur-md border-b border-amber-900/10 transition-all duration-300"
-    >
-      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
-        <a
-          href="#hero"
-          class="font-serif text-2xl font-bold tracking-wider text-emeraldCustom-800 flex items-center gap-2"
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+    <div class="weave" aria-hidden="true"></div>
+    <header class="site-header">
+      <nav class="container nav" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Munmun and Somraj, home"
+          ><span class="brand-mark" aria-hidden="true">✦</span> M
+          <span style="font-style: italic; color: var(--gold)">&</span>
+          S</a
         >
-          <i data-lucide="sparkles" class="w-5 h-5 text-goldCustom-500"></i>
-          <span class="tracking-widest">M & S</span>
-        </a>
-
-        <!-- Desktop Nav Links -->
-        <div
-          class="hidden md:flex items-center space-x-8 text-sm font-medium text-emeraldCustom-800/90 tracking-wide"
-        >
-          <a href="#our-story" class="hover:text-terracotta-600 transition-colors">Our Welcome</a>
-          <a href="#events" class="hover:text-terracotta-600 transition-colors">Events & Venues</a>
-          <a href="#tripura-guide" class="hover:text-terracotta-600 transition-colors"
-            >Tripura Guide</a
-          >
-        </div>
-
-        <!-- Mobile Navigation Toggle -->
         <button
-          @click="mobileMenuOpen = !mobileMenuOpen"
-          class="md:hidden p-2 text-emeraldCustom-800 focus:outline-none"
-          aria-label="Toggle menu"
+          type="button"
+          class="menu-toggle"
+          id="menuToggle"
+          aria-controls="navLinks"
+          aria-label="Open menu"
+          hidden
+          aria-expanded="false"
         >
-          <i data-lucide="menu" x-show="!mobileMenuOpen" class="w-6 h-6"></i>
-          <i data-lucide="x" x-show="mobileMenuOpen" class="w-6 h-6" x-cloak></i>
+          ☰
         </button>
-      </div>
+        <div class="nav-links" id="navLinks">
+          <a href="#celebrations">Celebrations</a>
+          <a href="#travel">Guest guide</a>
+          <a href="#invitation">Invitation</a>
+          <a class="nav-pill" href="#countdown">Save the dates</a>
+        </div>
+      </nav>
+    </header>
 
-      <!-- Mobile Dropdown Menu -->
-      <div
-        x-show="mobileMenuOpen"
-        x-cloak
-        class="md:hidden bg-cream border-b border-amber-900/10 px-6 pt-3 pb-6 space-y-4 shadow-lg"
+    <main id="main">
+      <section class="hero" id="home" aria-labelledby="heroTitle">
+        <span id="hero" class="anchor-alias"></span>
+        <div class="arch" aria-hidden="true"></div>
+        <svg
+          class="flora left"
+          aria-hidden="true"
+          viewBox="0 0 380 560"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g stroke="#aa8a54" stroke-width="2">
+            <path d="M14 557C70 390 123 246 277 32" />
+            <path d="M53 458C8 415 15 369 35 330C81 360 95 398 53 458Z" />
+            <path d="M92 357C54 311 63 270 91 239C132 274 133 317 92 357Z" />
+            <path
+              d="M151 255C111 208 135 165 166 145C201 192 193 229 151 255Z"
+            />
+            <path d="M219 151C204 111 226 75 267 55C275 102 256 130 219 151Z" />
+            <path d="M74 401C131 380 168 398 193 433C143 459 100 444 74 401Z" />
+            <path
+              d="M121 303C178 268 224 280 256 311C208 351 162 340 121 303Z"
+            />
+            <path
+              d="M189 200C241 166 288 169 326 194C281 234 235 233 189 200Z"
+            />
+          </g>
+          <g fill="#b14a49" opacity=".74">
+            <circle cx="277" cy="31" r="8" />
+            <circle cx="291" cy="20" r="5" />
+            <circle cx="276" cy="15" r="5" />
+          </g>
+        </svg>
+        <svg
+          class="flora right"
+          aria-hidden="true"
+          viewBox="0 0 380 560"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g stroke="#aa8a54" stroke-width="2">
+            <path d="M14 557C70 390 123 246 277 32" />
+            <path d="M53 458C8 415 15 369 35 330C81 360 95 398 53 458Z" />
+            <path d="M92 357C54 311 63 270 91 239C132 274 133 317 92 357Z" />
+            <path
+              d="M151 255C111 208 135 165 166 145C201 192 193 229 151 255Z"
+            />
+            <path d="M219 151C204 111 226 75 267 55C275 102 256 130 219 151Z" />
+            <path d="M74 401C131 380 168 398 193 433C143 459 100 444 74 401Z" />
+            <path
+              d="M121 303C178 268 224 280 256 311C208 351 162 340 121 303Z"
+            />
+            <path
+              d="M189 200C241 166 288 169 326 194C281 234 235 233 189 200Z"
+            />
+          </g>
+          <g fill="#b14a49" opacity=".74">
+            <circle cx="277" cy="31" r="8" />
+            <circle cx="291" cy="20" r="5" />
+            <circle cx="276" cy="15" r="5" />
+          </g>
+        </svg>
+        <div class="container hero-content">
+          <div class="hero-mark" aria-hidden="true">❈</div>
+          <p class="eyebrow">Together with our families · Tripura, India</p>
+          <h1 id="heroTitle" class="display">
+            <span>Munmun</span> <em>&</em> <span>Somraj</span>
+          </h1>
+          <p class="hero-sub">
+            With hearts full of joy, we invite you to celebrate the beginning of
+            our forever.
+          </p>
+          <div class="gold-separator" aria-hidden="true">◇</div>
+          <div class="hero-dates">
+            <span>13 December 2026 · Kumarghat</span
+            ><span class="date-dot" aria-hidden="true">✦</span
+            ><span>17 December 2026 · Agartala</span>
+          </div>
+          <div class="hero-actions">
+            <a class="btn btn-solid" href="#celebrations"
+              >Explore the celebrations</a
+            ><a class="btn btn-outline" href="#invitation"
+              >View our invitation</a
+            >
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          Scroll to discover <span>↓</span>
+        </div>
+      </section>
+
+      <div id="our-story" class="ribbon-statement">
+        <div class="container">
+          <p>
+            Two celebrations <b>✦</b> One beautiful beginning <b>✦</b> A
+            lifetime of togetherness
+          </p>
+        </div>
+      </div>
+      <div class="weave" aria-hidden="true"></div>
+
+      <section
+        class="section celebrations"
+        id="celebrations"
+        aria-labelledby="eventsTitle"
       >
-        <a
-          @click="mobileMenuOpen = false"
-          href="#our-story"
-          class="block text-emeraldCustom-800 font-medium hover:text-terracotta-600"
-          >Our Welcome</a
-        >
-        <a
-          @click="mobileMenuOpen = false"
-          href="#events"
-          class="block text-emeraldCustom-800 font-medium hover:text-terracotta-600"
-          >Events & Venues</a
-        >
-        <a
-          @click="mobileMenuOpen = false"
-          href="#tripura-guide"
-          class="block text-emeraldCustom-800 font-medium hover:text-terracotta-600"
-          >Tripura Guide</a
-        >
-      </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section
-      id="hero"
-      class="relative min-h-screen pt-28 pb-16 flex items-center justify-center bg-pattern hero-gradient overflow-hidden"
-    >
-      <div class="max-w-4xl mx-auto text-center px-4 sm:px-6 relative z-10">
-        <!-- Traditional Motif Badge -->
-        <div
-          class="inline-flex items-center justify-center p-3 mb-6 bg-amber-100/70 text-terracotta-600 rounded-full border border-amber-300 shadow-sm"
-        >
-          <i data-lucide="heart" class="w-6 h-6 fill-terracotta-500 text-terracotta-500"></i>
-        </div>
-
-        <p
-          class="text-xs sm:text-sm font-semibold uppercase tracking-widest text-goldCustom-600 mb-3"
-        >
-          We Request The Pleasure Of Your Presence
-        </p>
-
-        <!-- Names Display (First Names Only) -->
-        <h1
-          class="font-serif text-5xl sm:text-7xl md:text-8xl font-bold text-emeraldCustom-800 tracking-tight leading-none mb-4"
-        >
-          Somraj
-          <span class="text-terracotta-500 font-serif italic text-4xl sm:text-6xl md:text-7xl"
-            >&amp;</span
-          >
-          Munmun
-        </h1>
-
-        <p
-          class="font-serif italic text-xl sm:text-2xl md:text-3xl text-terracotta-600 mb-8 max-w-2xl mx-auto"
-        >
-          Are getting married in the enchanting hills &amp; historic heritage of Tripura
-        </p>
-
-        <!-- Key Dates Badge -->
-        <div
-          class="inline-flex flex-wrap items-center justify-center gap-3 bg-white/90 border border-amber-300/80 px-6 py-3 rounded-2xl shadow-sm mb-12 backdrop-blur-sm text-sm sm:text-base font-medium text-emeraldCustom-800"
-        >
-          <span class="flex items-center gap-1.5">
-            <i data-lucide="calendar" class="w-4 h-4 text-terracotta-500"></i>
-            Wedding: December 13th, 2026 (Kumarghat)
-          </span>
-          <span class="text-amber-400"></span>
-          <span class="flex items-center gap-1.5">
-            <i data-lucide="sparkles" class="w-4 h-4 text-goldCustom-500"></i>
-            Reception: December 17th, 2026 (Agartala)
-          </span>
-        </div>
-
-        <!-- Countdown Timer -->
-        <div
-          class="bg-emeraldCustom-800 text-amber-50 p-6 sm:p-8 rounded-3xl shadow-2xl max-w-2xl mx-auto border border-goldCustom-500/40"
-        >
-          <h3 class="text-xs uppercase tracking-widest text-goldCustom-400 font-semibold mb-6">
-            Counting Down To The Celebrations
-          </h3>
-          <div class="grid grid-cols-4 gap-2 sm:gap-4 text-center">
-            <div class="bg-emeraldCustom-900/80 p-3 sm:p-4 rounded-2xl border border-white/10">
-              <span
-                class="block text-2xl sm:text-4xl font-serif font-bold text-amber-100"
-                x-text="timeLeft.days"
-                >0</span
-              >
-              <span
-                class="text-[10px] sm:text-xs text-amber-200/80 uppercase tracking-wider mt-1 block"
-                >Days</span
-              >
-            </div>
-            <div class="bg-emeraldCustom-900/80 p-3 sm:p-4 rounded-2xl border border-white/10">
-              <span
-                class="block text-2xl sm:text-4xl font-serif font-bold text-amber-100"
-                x-text="timeLeft.hours"
-                >0</span
-              >
-              <span
-                class="text-[10px] sm:text-xs text-amber-200/80 uppercase tracking-wider mt-1 block"
-                >Hours</span
-              >
-            </div>
-            <div class="bg-emeraldCustom-900/80 p-3 sm:p-4 rounded-2xl border border-white/10">
-              <span
-                class="block text-2xl sm:text-4xl font-serif font-bold text-amber-100"
-                x-text="timeLeft.minutes"
-                >0</span
-              >
-              <span
-                class="text-[10px] sm:text-xs text-amber-200/80 uppercase tracking-wider mt-1 block"
-                >Mins</span
-              >
-            </div>
-            <div class="bg-emeraldCustom-900/80 p-3 sm:p-4 rounded-2xl border border-white/10">
-              <span
-                class="block text-2xl sm:text-4xl font-serif font-bold text-amber-100"
-                x-text="timeLeft.seconds"
-                >0</span
-              >
-              <span
-                class="text-[10px] sm:text-xs text-amber-200/80 uppercase tracking-wider mt-1 block"
-                >Secs</span
-              >
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Warm Cultural Welcome Section -->
-    <section id="our-story" class="py-20 bg-white border-y border-amber-900/10">
-      <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
-        <span class="text-terracotta-600 font-serif italic text-xl block mb-1"
-          >Phoroknai! (A Warm Welcome)</span
-        >
-        <h2 class="font-serif text-3xl sm:text-5xl font-bold text-emeraldCustom-800 mb-6">
-          Welcome to Tripura
-        </h2>
-        <div class="w-16 h-1 bg-goldCustom-500 mx-auto mb-8 rounded-full"></div>
-
-        <p class="text-slate-600 text-base sm:text-lg leading-relaxed mb-6">
-          For our guests visiting from across India, we are overjoyed to welcome you to the sacred
-          <strong class="text-emeraldCustom-800">"Land of Fourteen Gods"</strong>. Nestled in North
-          East India, Tripura is a paradise of ancient rock relief sculptures, royal palaces,
-          pineapples orchards, tea gardens, and lush bamboo hills.
-        </p>
-        <p class="text-slate-600 text-base sm:text-lg leading-relaxed">
-          As <strong class="text-emeraldCustom-800">Somraj &amp; Munmun</strong> unite in marriage,
-          we invite you to experience traditional wedding rituals in
-          <strong class="text-terracotta-600">Kumarghat</strong> followed by our grand gala
-          reception in the capital city of <strong class="text-terracotta-600">Agartala</strong>.
-        </p>
-
-        <!-- Feature Highlights Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
-          <div class="p-6 bg-cream rounded-2xl border border-amber-200/80 text-center shadow-sm">
-            <div
-              class="w-12 h-12 bg-amber-100 text-terracotta-600 rounded-full flex items-center justify-center mx-auto mb-4"
-            >
-              <i data-lucide="smile" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif font-bold text-emeraldCustom-800 text-lg mb-2">
-              Heartfelt Hospitality
-            </h3>
-            <p class="text-slate-600 text-sm">
-              Experience the genuine warmth, peaceful charm, and gracious traditions of Tripura.
+        <div class="container">
+          <div class="section-heading">
+            <p class="eyebrow">Mark your calendars</p>
+            <h2 class="display" id="eventsTitle">The celebrations</h2>
+            <div class="gold-separator" aria-hidden="true">◇</div>
+            <p>
+              We would be honoured to share these special moments with you, from
+              the wedding ceremony in Kumarghat to the reception in Agartala.
             </p>
           </div>
-          <div class="p-6 bg-cream rounded-2xl border border-amber-200/80 text-center shadow-sm">
-            <div
-              class="w-12 h-12 bg-amber-100 text-terracotta-600 rounded-full flex items-center justify-center mx-auto mb-4"
-            >
-              <i data-lucide="trees" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif font-bold text-emeraldCustom-800 text-lg mb-2">Lush Greenery</h3>
-            <p class="text-slate-600 text-sm">
-              Surrounded by rolling green hills, bamboo grooves, and fresh mountain air.
-            </p>
-          </div>
-          <div class="p-6 bg-cream rounded-2xl border border-amber-200/80 text-center shadow-sm">
-            <div
-              class="w-12 h-12 bg-amber-100 text-terracotta-600 rounded-full flex items-center justify-center mx-auto mb-4"
-            >
-              <i data-lucide="utensils" class="w-6 h-6"></i>
-            </div>
-            <h3 class="font-serif font-bold text-emeraldCustom-800 text-lg mb-2">
-              Authentic Culinary Delights
-            </h3>
-            <p class="text-slate-600 text-sm">
-              Savor rich festive banquets alongside sweet delicacies and regional Tripuri dishes.
-            </p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Schedule & Venues -->
-    <section id="events" class="py-20 bg-pattern">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-16">
-          <p class="text-xs font-semibold uppercase tracking-widest text-goldCustom-600 mb-2">
-            Celebration Itinerary
-          </p>
-          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-emeraldCustom-800">
-            Wedding &amp; Reception Details
-          </h2>
-          <div class="w-16 h-1 bg-goldCustom-500 mx-auto mt-4 rounded-full"></div>
-        </div>
-
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
-          <!-- Event 1: Wedding -->
-          <div
-            class="bg-white rounded-3xl p-8 border border-amber-200 shadow-md hover:shadow-xl transition-shadow flex flex-col justify-between relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 right-0 bg-terracotta-600 text-white text-xs font-bold px-4 py-1.5 rounded-bl-xl tracking-wider uppercase"
-            >
-              Main Ceremony
-            </div>
-            <div>
-              <div class="inline-flex items-center gap-2 text-terracotta-600 font-semibold mb-2">
-                <i data-lucide="calendar" class="w-5 h-5"></i>
-                <span>13th Celebration</span>
+          <div id="events" class="events-grid">
+            <article class="event wedding">
+              <div class="event-top">
+                <div class="event-date">
+                  <strong>13</strong><span>Sunday<br />December 2026</span>
+                </div>
+                <p class="eyebrow">The beginning of forever</p>
+                <h3>The Wedding Ceremony</h3>
+                <p class="event-description">
+                  Join us for the wedding rituals and the beginning of a new
+                  chapter, surrounded by the love of our families and friends.
+                </p>
               </div>
-              <h3 class="font-serif text-3xl font-bold text-emeraldCustom-800 mb-3">
-                The Wedding Rituals
-              </h3>
-              <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                Join Somraj &amp; Munmun for traditional wedding rituals in the serene surroundings
-                of Kumarghat.
-              </p>
-
-              <div class="space-y-3 border-t border-slate-100 pt-6 text-sm">
-                <div class="flex items-start gap-3 text-slate-700">
-                  <i data-lucide="map-pin" class="w-5 h-5 text-terracotta-500 shrink-0 mt-0.5"></i>
-                  <div>
-                    <strong class="block text-emeraldCustom-800 font-medium">Location:</strong>
-                    Kumarghat, Unakoti District, Tripura
-                  </div>
-                </div>
-                <div class="flex items-start gap-3 text-slate-700">
-                  <i data-lucide="clock" class="w-5 h-5 text-terracotta-500 shrink-0 mt-0.5"></i>
-                  <div>
-                    <strong class="block text-emeraldCustom-800 font-medium">Timing:</strong>
-                    Evening Muhurat Rituals
-                  </div>
-                </div>
-                <div class="flex items-start gap-3 text-slate-700">
-                  <i data-lucide="shirt" class="w-5 h-5 text-terracotta-500 shrink-0 mt-0.5"></i>
-                  <div>
-                    <strong class="block text-emeraldCustom-800 font-medium">Attire:</strong>
-                    Traditional Festive Wear
-                  </div>
+              <div class="event-foot">
+                <p class="event-location">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s7-6.7 7-12A7 7 0 0 0 5 9c0 5.3 7 12 7 12Z"
+                    />
+                    <circle cx="12" cy="9" r="2.5" />
+                  </svg>
+                  Kumarghat, Tripura
+                </p>
+                <div class="event-links">
+                  <a
+                    class="small-link"
+                    href="https://www.google.com/maps/dir/?api=1&amp;destination=Kumarghat%2C%20Tripura"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Directions to Kumarghat ↗</a
+                  ><a class="small-link" href="assets/wedding.ics" download
+                    >＋ Save the date</a
+                  >
                 </div>
               </div>
-            </div>
-
-            <div class="mt-8 pt-4">
-              <a
-                href="https://maps.google.com/?q=Kumarghat+Tripura"
-                target="_blank"
-                rel="noopener"
-                class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-emeraldCustom-800 hover:bg-emeraldCustom-900 text-amber-50 rounded-xl font-medium text-sm transition-colors"
-              >
-                <i data-lucide="navigation" class="w-4 h-4"></i>
-                <span>View Directions to Kumarghat</span>
-              </a>
-            </div>
-          </div>
-
-          <!-- Event 2: Reception -->
-          <div
-            class="bg-white rounded-3xl p-8 border border-amber-200 shadow-md hover:shadow-xl transition-shadow flex flex-col justify-between relative overflow-hidden"
-          >
-            <div
-              class="absolute top-0 right-0 bg-goldCustom-500 text-emeraldCustom-900 text-xs font-bold px-4 py-1.5 rounded-bl-xl tracking-wider uppercase"
-            >
-              Grand Reception
-            </div>
-            <div>
-              <div class="inline-flex items-center gap-2 text-goldCustom-600 font-semibold mb-2">
-                <i data-lucide="sparkles" class="w-5 h-5"></i>
-                <span>17th Celebration</span>
+            </article>
+            <article class="event reception">
+              <div class="event-top">
+                <div class="event-date">
+                  <strong>17</strong><span>Thursday<br />December 2026</span>
+                </div>
+                <p class="eyebrow" style="color: #dfbd7e">
+                  A celebration of togetherness
+                </p>
+                <h3>The Wedding Reception</h3>
+                <p class="event-description">
+                  Let us celebrate love, laughter and new beginnings with a
+                  joyful celebration together in Agartala.
+                </p>
               </div>
-              <h3 class="font-serif text-3xl font-bold text-emeraldCustom-800 mb-3">
-                The Gala Reception
-              </h3>
-              <p class="text-slate-600 text-sm mb-6 leading-relaxed">
-                An evening of music, festive dining, and joyous celebrations in the state capital
-                city of Agartala.
-              </p>
-
-              <div class="space-y-3 border-t border-slate-100 pt-6 text-sm">
-                <div class="flex items-start gap-3 text-slate-700">
-                  <i data-lucide="map-pin" class="w-5 h-5 text-goldCustom-600 shrink-0 mt-0.5"></i>
-                  <div>
-                    <strong class="block text-emeraldCustom-800 font-medium">Location:</strong>
-                    Agartala, West Tripura
-                  </div>
-                </div>
-                <div class="flex items-start gap-3 text-slate-700">
-                  <i data-lucide="clock" class="w-5 h-5 text-goldCustom-600 shrink-0 mt-0.5"></i>
-                  <div>
-                    <strong class="block text-emeraldCustom-800 font-medium">Timing:</strong>
-                    7:00 PM Onwards
-                  </div>
-                </div>
-                <div class="flex items-start gap-3 text-slate-700">
-                  <i data-lucide="shirt" class="w-5 h-5 text-goldCustom-600 shrink-0 mt-0.5"></i>
-                  <div>
-                    <strong class="block text-emeraldCustom-800 font-medium">Attire:</strong>
-                    Indo-Western / Formal Elegance
-                  </div>
+              <div class="event-foot">
+                <p class="event-location">
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path
+                      d="M12 21s7-6.7 7-12A7 7 0 0 0 5 9c0 5.3 7 12 7 12Z"
+                    />
+                    <circle cx="12" cy="9" r="2.5" />
+                  </svg>
+                  Agartala, Tripura
+                </p>
+                <div class="event-links">
+                  <a
+                    class="small-link"
+                    href="https://www.google.com/maps/dir/?api=1&amp;destination=Agartala%2C%20Tripura"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Directions to Agartala ↗</a
+                  ><a class="small-link" href="assets/reception.ics" download
+                    >＋ Save the date</a
+                  >
                 </div>
               </div>
-            </div>
-
-            <div class="mt-8 pt-4">
-              <a
-                href="https://maps.google.com/?q=Agartala+Tripura"
-                target="_blank"
-                rel="noopener"
-                class="w-full inline-flex items-center justify-center gap-2 px-5 py-3 bg-emeraldCustom-800 hover:bg-emeraldCustom-900 text-amber-50 rounded-xl font-medium text-sm transition-colors"
-              >
-                <i data-lucide="navigation" class="w-4 h-4"></i>
-                <span>View Directions to Agartala</span>
-              </a>
-            </div>
+            </article>
           </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- Interactive Tripura Guest Travel Guide -->
-    <section id="tripura-guide" class="py-20 bg-white">
-      <div class="max-w-5xl mx-auto px-4 sm:px-6">
-        <div class="text-center mb-12">
-          <span
-            class="text-terracotta-600 font-semibold uppercase text-xs tracking-widest block mb-2"
-            >Guest Travel Guide</span
-          >
-          <h2 class="font-serif text-3xl sm:text-5xl font-bold text-emeraldCustom-800">
-            Exploring Tripura
-          </h2>
-          <p class="text-slate-600 text-sm sm:text-base mt-2 max-w-2xl mx-auto">
-            Essential travel details to help you comfortably navigate, explore, and experience
-            Tripura during your visit.
+          <p class="event-note">
+            Exact venues and times will be shared once confirmed. Directions
+            currently lead to the towns; calendar downloads reserve the whole
+            day.
           </p>
         </div>
+      </section>
 
-        <!-- Tab Navigation Buttons -->
-        <div class="flex flex-wrap justify-center gap-2 mb-8 border-b border-slate-200 pb-4">
-          <button
-            @click="activeTab = 'travel'"
-            :class="activeTab === 'travel' ? 'bg-terracotta-600 text-white shadow' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'"
-            class="px-5 py-2.5 rounded-full font-medium text-sm transition-all flex items-center gap-2"
-          >
-            <i data-lucide="plane" class="w-4 h-4"></i>
-            <span>How to Reach &amp; Transit</span>
-          </button>
-          <button
-            @click="activeTab = 'places'"
-            :class="activeTab === 'places' ? 'bg-terracotta-600 text-white shadow' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'"
-            class="px-5 py-2.5 rounded-full font-medium text-sm transition-all flex items-center gap-2"
-          >
-            <i data-lucide="landmark" class="w-4 h-4"></i>
-            <span>Must-See Places</span>
-          </button>
-          <button
-            @click="activeTab = 'culture'"
-            :class="activeTab === 'culture' ? 'bg-terracotta-600 text-white shadow' : 'bg-slate-100 text-slate-700 hover:bg-slate-200'"
-            class="px-5 py-2.5 rounded-full font-medium text-sm transition-all flex items-center gap-2"
-          >
-            <i data-lucide="sun-medium" class="w-4 h-4"></i>
-            <span>Culture &amp; Cuisine</span>
-          </button>
-        </div>
-
-        <!-- Tab 1: Reach & Transit -->
-        <div
-          x-show="activeTab === 'travel'"
-          x-cloak
-          class="bg-cream p-6 sm:p-8 rounded-3xl border border-amber-200/80 shadow-sm space-y-6"
-        >
-          <h3 class="font-serif text-2xl font-bold text-emeraldCustom-800 flex items-center gap-2">
-            <i data-lucide="map-pinned" class="w-5 h-5 text-terracotta-600"></i>
-            Reaching Tripura &amp; Traveling Between Venues
-          </h3>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-            <div class="bg-white p-5 rounded-2xl border border-amber-100 shadow-sm">
-              <div class="flex items-center gap-3 text-terracotta-600 font-semibold mb-2">
-                <i data-lucide="plane-takeoff" class="w-5 h-5"></i>
-                <h4>By Air (MBB Airport - Agartala)</h4>
-              </div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Fly into <strong>Maharaja Bir Bikram Airport (IXA) in Agartala</strong>. Direct and
-                connecting flights operate daily from Kolkata, Guwahati, Delhi, and Bengaluru.
-              </p>
+      <section class="section journey" id="travel" aria-labelledby="guideTitle">
+        <div class="container guide-layout">
+          <div class="guide-intro">
+            <p class="eyebrow">For our loved ones travelling</p>
+            <h2 class="display" id="guideTitle">
+              Welcome to<br />beautiful Tripura
+            </h2>
+            <div
+              class="gold-separator"
+              style="justify-content: flex-start"
+              aria-hidden="true"
+            >
+              ◇
             </div>
-
-            <div class="bg-white p-5 rounded-2xl border border-amber-100 shadow-sm">
-              <div class="flex items-center gap-3 text-terracotta-600 font-semibold mb-2">
-                <i data-lucide="train" class="w-5 h-5"></i>
-                <h4>By Train</h4>
-              </div>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                <strong>Kumarghat (KUGT)</strong> and <strong>Agartala (AGTL)</strong> are directly
-                connected by broad-gauge express trains.
-              </p>
-            </div>
+            <p>
+              Whether you are coming from nearby or from across the country, we
+              look forward to welcoming you to the place where we will celebrate
+              together.
+            </p>
           </div>
-
-          <div class="bg-amber-50/80 border border-amber-200 p-5 rounded-2xl">
-            <h4 class="font-semibold text-emeraldCustom-800 text-sm mb-2 flex items-center gap-2">
-              <i data-lucide="car" class="w-4 h-4 text-terracotta-600"></i>
-              Transit between Kumarghat (13th) &amp; Agartala (17th):
-            </h4>
-            <p class="text-xs text-slate-700 leading-relaxed">
-              Kumarghat is approximately 120 km from Agartala. The journey takes around 2.5 to 3
-              hours via highway taxi or express train, offering scenic views of tea estates and
-              green rolling hills.
+          <div id="tripura-guide" class="guide-list">
+            <details class="guide-item" open>
+              <summary>Arriving by air</summary>
+              <p>
+                The nearest major airport for many guests is Maharaja Bir Bikram
+                Airport (IXA) in Agartala. Please check current flight
+                availability for your travel dates.
+              </p>
+            </details>
+            <details class="guide-item">
+              <summary>Travelling by train</summary>
+              <p>
+                Agartala (AGTL) and Kumarghat (KUGT) have railway stations.
+                Check
+                <a
+                  href="https://www.irctc.co.in/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >IRCTC</a
+                >
+                for routes and timings before booking.
+              </p>
+            </details>
+            <details class="guide-item">
+              <summary>Between the celebrations</summary>
+              <p>
+                The wedding takes place in Kumarghat on 13 December, and the
+                reception in Agartala on 17 December. Plan a separate transfer
+                between the two towns. Local taxis and buses are available;
+                arrange intercity transport ahead of time and confirm fares and
+                journey times with your provider.
+              </p>
+            </details>
+            <details class="guide-item">
+              <summary>What should I wear?</summary>
+              <p>
+                Festive traditional attire will be lovely for the wedding;
+                festive or formal attire will be appropriate for the reception.
+                Comfortable shoes and a light shawl or jacket are a good idea
+                for cooler evenings. These are suggestions — please wear what
+                makes you feel comfortable.
+              </p>
+            </details>
+            <details class="guide-item">
+              <summary>A little more of Tripura</summary>
+              <p>
+                If you are extending your stay, explore the rock carvings at
+                Unakoti, Ujjayanta Palace in Agartala or Neermahal on Rudrasagar
+                Lake. Check opening times and travel arrangements with Tripura
+                Tourism before setting out.
+              </p>
+            </details>
+            <details class="guide-item">
+              <summary>Local flavours &amp; hospitality</summary>
+              <p>
+                Leave a little room to discover Tripura’s local tea, pineapples
+                and regional cuisine. Ask your hosts about their favourite
+                places, and let them know about any dietary needs before your
+                visit.
+              </p>
+            </details>
+            <p class="guide-source">
+              Plan your visit with
+              <a
+                href="https://tripuratourism.gov.in/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Tripura Tourism ↗</a
+              >.
             </p>
           </div>
         </div>
+      </section>
 
-        <!-- Tab 2: Sightseeing -->
-        <div
-          x-show="activeTab === 'places'"
-          x-cloak
-          class="bg-cream p-6 sm:p-8 rounded-3xl border border-amber-200/80 shadow-sm space-y-6"
-        >
-          <h3 class="font-serif text-2xl font-bold text-emeraldCustom-800 flex items-center gap-2">
-            <i data-lucide="compass" class="w-5 h-5 text-terracotta-600"></i>
-            Sightseeing Highlights in Tripura
-          </h3>
-
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <!-- Unakoti -->
-            <div
-              class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between"
-            >
-              <div>
-                <span class="text-xs font-semibold uppercase text-goldCustom-600 block mb-1"
-                  >Near Kumarghat</span
-                >
-                <h4 class="font-bold text-emeraldCustom-800 text-lg mb-2">Unakoti Rock Reliefs</h4>
-                <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                  Ancient pilgrimage site featuring magnificent 8th-9th century rock-cut carvings of
-                  Shiva nestled in lush greenery.
-                </p>
-              </div>
-              <span
-                class="text-xs bg-amber-100 text-amber-900 px-3 py-1 rounded-full font-medium inline-block w-max"
-                >~30 mins from Kumarghat</span
-              >
-            </div>
-
-            <!-- Ujjayanta Palace -->
-            <div
-              class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between"
-            >
-              <div>
-                <span class="text-xs font-semibold uppercase text-goldCustom-600 block mb-1"
-                  >In Agartala</span
-                >
-                <h4 class="font-bold text-emeraldCustom-800 text-lg mb-2">Ujjayanta Palace</h4>
-                <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                  A majestic royal palace built in 1901 by the Manikya dynasty, set among tiled
-                  fountains and neoclassical gardens.
-                </p>
-              </div>
-              <span
-                class="text-xs bg-amber-100 text-amber-900 px-3 py-1 rounded-full font-medium inline-block w-max"
-                >City Center, Agartala</span
-              >
-            </div>
-
-            <!-- Neermahal -->
-            <div
-              class="bg-white p-5 rounded-2xl border border-slate-100 shadow-sm flex flex-col justify-between"
-            >
-              <div>
-                <span class="text-xs font-semibold uppercase text-goldCustom-600 block mb-1"
-                  >Near Agartala</span
-                >
-                <h4 class="font-bold text-emeraldCustom-800 text-lg mb-2">
-                  Neermahal Water Palace
-                </h4>
-                <p class="text-xs text-slate-600 leading-relaxed mb-4">
-                  The picturesque "Water Palace" of North East India sitting in the middle of
-                  Rudrasagar Lake.
-                </p>
-              </div>
-              <span
-                class="text-xs bg-amber-100 text-amber-900 px-3 py-1 rounded-full font-medium inline-block w-max"
-                >~1 hr drive from Agartala</span
+      <section
+        class="section invite-section"
+        id="invitation"
+        aria-labelledby="inviteTitle"
+      >
+        <div class="container invite-layout">
+          <div class="invite-copy">
+            <p class="eyebrow">From our hearts to yours</p>
+            <h2 class="display" id="inviteTitle">
+              An invitation<br />made with love
+            </h2>
+            <p>
+              Inspired by the colours, handwoven traditions and natural beauty
+              of Tripura, our invitation is a little keepsake of the days we
+              hope to share with you.
+            </p>
+            <div class="invite-actions">
+              <a
+                class="btn btn-solid"
+                download="Munmun-and-Somraj-Wedding-Invitation.png"
+                href="assets/wedding-invitation.png"
+                >Download invitation</a
+              ><a
+                class="btn btn-outline"
+                href="assets/wedding-invitation.png"
+                id="previewInvite"
+                >Enlarge card</a
               >
             </div>
           </div>
-        </div>
-
-        <!-- Tab 3: Culture & Cuisine -->
-        <div
-          x-show="activeTab === 'culture'"
-          x-cloak
-          class="bg-cream p-6 sm:p-8 rounded-3xl border border-amber-200/80 shadow-sm space-y-6"
-        >
-          <h3 class="font-serif text-2xl font-bold text-emeraldCustom-800 flex items-center gap-2">
-            <i data-lucide="heart-handshake" class="w-5 h-5 text-terracotta-600"></i>
-            Culture, Cuisine &amp; Tips
-          </h3>
-
-          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 text-sm text-slate-700">
-            <div class="bg-white p-5 rounded-2xl border border-slate-100 space-y-2">
-              <h4 class="font-bold text-emeraldCustom-800 text-base flex items-center gap-2">
-                <i data-lucide="utensils-crossed" class="w-4 h-4 text-terracotta-500"></i>
-                Culinary Delights
-              </h4>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                Enjoy famous organic Queen Pineapples, local tea, sweet delicacies, and sumptuous
-                traditional Bengali wedding banquets alongside regional specialties.
-              </p>
-            </div>
-
-            <div class="bg-white p-5 rounded-2xl border border-slate-100 space-y-2">
-              <h4 class="font-bold text-emeraldCustom-800 text-base flex items-center gap-2">
-                <i data-lucide="cloud-sun" class="w-4 h-4 text-terracotta-500"></i>
-                Weather &amp; Clothing Advice
-              </h4>
-              <p class="text-xs text-slate-600 leading-relaxed">
-                The weather is pleasant with clear skies. Evenings can be cool, so carrying a light
-                jacket or shawl for outdoor evening celebrations is recommended.
-              </p>
-            </div>
+          <div class="invite-photo">
+            <img
+              loading="lazy"
+              decoding="async"
+              width="1122"
+              height="1402"
+              src="assets/wedding-invitation.webp"
+              alt="Invitation card for Munmun and Somraj, wedding 13 December 2026 in Kumarghat and reception 17 December 2026 in Agartala"
+            />
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <!-- Footer -->
-    <footer
-      class="bg-emeraldCustom-900 text-amber-100/80 py-12 text-center text-sm border-t border-goldCustom-500/20"
-    >
-      <div class="max-w-4xl mx-auto px-4">
-        <h3 class="font-serif text-3xl font-bold text-amber-100 mb-2">Somraj &amp; Munmun</h3>
-        <p class="text-xs text-amber-200/60 mb-6">Tripura Wedding &amp; Reception Celebrations</p>
-        <p class="text-xs text-amber-200/50 mb-6">
-          We look forward to celebrating these unforgettable moments together with you in Tripura!
-        </p>
-        <small>
-          Copyright &copy;
-          <a href="https://jarmos.dev" target="_blank" class="underline underline-offset-3"
+      <section
+        class="countdown-section"
+        id="countdown"
+        aria-labelledby="countdownTitle"
+      >
+        <div class="container">
+          <p class="eyebrow">Until we celebrate together</p>
+          <h2 id="countdownTitle">Counting down to our wedding</h2>
+          <div class="countdown" aria-label="Time until the wedding">
+            <div><strong id="days">--</strong><span>Days</span></div>
+            <div><strong id="hours">--</strong><span>Hours</span></div>
+            <div><strong id="minutes">--</strong><span>Minutes</span></div>
+            <div><strong id="seconds">--</strong><span>Seconds</span></div>
+          </div>
+          <p class="countdown-note" id="countdownNote">
+            Until 13 December 2026 begins in India (IST), not the ceremony time.
+          </p>
+          <noscript
+            ><p>Our wedding day is Sunday, 13 December 2026.</p></noscript
+          >
+        </div>
+      </section>
+
+      <section class="closing">
+        <div class="gold-separator" aria-hidden="true">◇</div>
+        <h2>We can't wait to see you.</h2>
+        <p>Your presence will make our celebrations all the more memorable.</p>
+        <div class="closing-name">Munmun & Somraj</div>
+      </section>
+    </main>
+
+    <div class="weave" aria-hidden="true"></div>
+    <footer>
+      <div class="container">
+        <span>Munmun & Somraj · Tripura · December 2026</span
+        ><span
+          >With love, for family &amp; friends. ·
+          <a href="https://jarmos.dev" target="_blank" rel="noopener noreferrer"
             >jarmos.dev</a
-          >
-        </small>
+          ></span
+        >
       </div>
     </footer>
-
-    <!-- Alpine.js Application Script -->
-    <script>
-      function weddingApp() {
-        return {
-          mobileMenuOpen: false,
-          activeTab: "travel",
-
-          // Countdown target date: 13th December 2026 (Evening Muhurat - 6:30 PM)
-          targetDate: new Date("2026-12-13T18:30:00").getTime(),
-          timeLeft: { days: 0, hours: 0, minutes: 0, seconds: 0 },
-
-          init() {
-            this.updateTimer();
-            setInterval(() => {
-              this.updateTimer();
-            }, 1000);
-
-            this.$nextTick(() => {
-              if (window.lucide) {
-                lucide.createIcons();
-              }
-            });
-          },
-
-          updateTimer() {
-            const now = new Date().getTime();
-            const difference = this.targetDate - now;
-
-            if (difference > 0) {
-              this.timeLeft.days = Math.floor(difference / (1000 * 60 * 60 * 24));
-              this.timeLeft.hours = Math.floor(
-                (difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60),
-              );
-              this.timeLeft.minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
-              this.timeLeft.seconds = Math.floor((difference % (1000 * 60)) / 1000);
-            } else {
-              this.timeLeft = { days: 0, hours: 0, minutes: 0, seconds: 0 };
-            }
-          },
-        };
-      }
-    </script>
+    <dialog id="inviteDialog" aria-labelledby="dialogTitle">
+      <div class="dialog-toolbar">
+        <h2 id="dialogTitle">Our wedding invitation</h2>
+        <button
+          class="dialog-close"
+          aria-label="Close invitation"
+          id="closeDialog"
+          type="button"
+          autofocus
+        >
+          ×
+        </button>
+      </div>
+      <div class="dialog-image">
+        <img
+          width="1122"
+          height="1402"
+          src="assets/wedding-invitation.webp"
+          alt="Munmun and Somraj invite you to their wedding on 13 December 2026 in Kumarghat and reception on 17 December 2026 in Agartala, Tripura."
+        />
+      </div>
+      <a
+        class="btn btn-solid"
+        download="Munmun-and-Somraj-Wedding-Invitation.png"
+        href="assets/wedding-invitation.png"
+        >Download invitation</a
+      >
+    </dialog>
+    <script type="module" src="app.js"></script>
   </body>
 </html>

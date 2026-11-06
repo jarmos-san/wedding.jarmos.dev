@@ -1,4 +1,4 @@
-# Munmun & Somraj — Wedding in Tripura
+# Somraj & Munmun — Wedding in Tripura
 
 A responsive, buildless wedding invitation for 13 December 2026 in Kumarghat and
 17 December 2026 in Agartala. Plain HTML, CSS and JavaScript; no backend or runtime

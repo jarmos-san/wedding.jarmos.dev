@@ -319,4 +319,4 @@ dist/**           binary
 *.md linguist-detectable
 
 # iCalendar downloads retain RFC 5545 CRLF bytes in the repository and on Pages.
-*.ics -text
+*.ics -text whitespace=cr-at-eol
